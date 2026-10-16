@@ -265,4 +265,3 @@ def test_staggered_feature_leak_caught_despite_regime_change():
     )
     ev = next(i for i in issues if i.column == "leaky").evidence
     assert ev["excess_over_persistence"] >= 0.1
-    
